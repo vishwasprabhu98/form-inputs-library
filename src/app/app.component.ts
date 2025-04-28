@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { InputComponent } from './components/input/input.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
@@ -20,7 +20,7 @@ import { RadioComponent } from './components/radio/radio.component';
 })
 export class AppComponent {
   title = 'vishwas-custom-inputs';
-  item: any;
-  inputTypes: any;
-  formGroup: any;
+  @Input() item: any;
+  @Input() inputTypes: any;
+  @Input() formGroup: any;
 }
